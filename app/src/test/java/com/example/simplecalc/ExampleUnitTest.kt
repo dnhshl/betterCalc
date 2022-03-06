@@ -1,4 +1,4 @@
-package com.example.simplebutton
+package com.example.simplecalc
 
 import org.junit.Test
 

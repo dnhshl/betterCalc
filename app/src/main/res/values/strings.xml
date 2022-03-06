@@ -2,4 +2,5 @@
     <string name="app_name">SimpleCalc</string>
     <string name="simpleButtonText">Drück Mich</string>
     <string name="simpleButtonTxt2">Danke fürs drücken</string>
+    <string name="inputText">Zahlen bitte</string>
 </resources>

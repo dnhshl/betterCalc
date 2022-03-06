@@ -1,18 +1,15 @@
-package com.example.simplebutton
+package com.example.simplecalc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
-import com.example.simplebutton.databinding.ActivityMainBinding
-import splitties.toast.longToast
+import simplecalc.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
     private val TAG = "MainActivity"
-    private var clickcounter = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,10 +17,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener {
-            clickcounter++
-            Log.i(TAG, "SimpleButton wurde $clickcounter mal gedrückt")
-            longToast("SimpleButton wurde $clickcounter mal gedrückt")
-            binding.button.text = getString(R.string.simpleButtonTxt2)
+            val numberstring = binding.editTextInput.text.toString()
+            binding.textViewOutput.text = numberstring
         }
     }
 }
