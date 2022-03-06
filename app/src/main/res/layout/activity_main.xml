@@ -10,38 +10,69 @@
         style="@android:style/Widget.Material.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="268dp"
-        android:text="TextView"
+        android:layout_marginTop="60dp"
+        android:text="Ergebnis"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_gleich" />
+
+    <TextView
+        android:id="@+id/text_view_gleich"
+        style="@android:style/Widget.Material.TextView"
+        android:layout_width="17dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/istgleich"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="@string/simpleButtonText"
+        android:layout_marginTop="88dp"
+        android:text="@string/Operator"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_input" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_input2" />
 
     <EditText
         android:id="@+id/edit_text_input"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="146dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
         android:ems="10"
-        android:hint="@string/inputText"
+        android:hint="@string/inputText1"
         android:inputType="number"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintEnd_toStartOf="@+id/edit_text_input2"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_input2"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="146dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="@string/inputText2"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_text_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_text_input" />
 </androidx.constraintlayout.widget.ConstraintLayout>

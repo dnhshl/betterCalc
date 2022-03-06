@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">SimpleCalc</string>
-    <string name="simpleButtonText">Drück Mich</string>
-    <string name="simpleButtonTxt2">Danke fürs drücken</string>
-    <string name="inputText">Zahlen bitte</string>
+    <string name="Operator">+</string>
+    <string name="inputText1">Operand 1</string>
+    <string name="inputText2">Operand 2</string>
+    <string name="istgleich">=</string>
+    <string name="noInput">Bitte geben Sie zwei Operanden an</string>
 </resources>
