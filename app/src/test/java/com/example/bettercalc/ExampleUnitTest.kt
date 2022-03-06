@@ -1,4 +1,4 @@
-package com.example.simplecalc
+package com.example.bettercalc
 
 import org.junit.Test
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SimpleCalc</string>
+    <string name="app_name">BetterCalc</string>
     <string name="Operator">+</string>
     <string name="inputText1">Operand 1</string>
     <string name="inputText2">Operand 2</string>

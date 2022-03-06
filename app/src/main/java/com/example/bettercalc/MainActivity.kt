@@ -1,11 +1,12 @@
-package com.example.simplecalc
+package com.example.bettercalc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.RadioButton
-import simplecalc.R
-import simplecalc.databinding.ActivityMainBinding
+import bettercalc.R
+import bettercalc.databinding.ActivityMainBinding
+
 import splitties.toast.toast
 
 
